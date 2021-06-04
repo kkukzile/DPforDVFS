@@ -1,4 +1,3 @@
-Execution helpers.cpp - src/graph/detail
 
 1. Introduced a new governor called FD-CNN. The governor is designed to switch to a set of predefined frequencies at predefined intervals, these frequencies and intervals are hard-coded into the governor code and the values change per the network. The governor is referred to as performance2 governor in the code.
     1. Code for the governors are available in [ DVFS Gov ] directory, to add the governor as a driver -
