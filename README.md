@@ -2,10 +2,10 @@ Execution helpers.cpp - src/graph/detail
 
 1. Introduced a new governor called FD-CNN. The governor is designed to switch to a set of predefined frequencies at predefined intervals, these frequencies and intervals are hard-coded into the governor code and the values change per the network. The governor is referred to as performance2 governor in the code.
     1. Code for the governors are available in [ DVFS Gov ] directory, to add the governor as a driver -
-            1. Add the .c file to /drivers/cpufreq
-            2. Make changes in Kconfig and Makefile to include the new file ( can refer to my files in Miscellaneous directory )
-            3. Rebuild kernel [linuxsc.sh, for more information - https://wiki.odroid.com/odroid-xu4/software/building_kernel]
-
+        1. Add the .c file to /drivers/cpufreq
+        2. Make changes in Kconfig and Makefile to include the new file ( can refer to my files in Miscellaneous directory )
+        3. Rebuild kernel [linuxsc.sh, for more information - https://wiki.odroid.com/odroid-xu4/software/building_kernel]
+    
 
     2. The INA231 sensor measures the power usage and the update period of the sensor can be changed to max (i.e 4 us) by changing update_period value in the device tree to 4480. Device tree location- arch/arm/boot/exynos5422-odroidxu3.dts.
 
