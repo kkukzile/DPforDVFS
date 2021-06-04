@@ -1,0 +1,1 @@
+/usr/bin/cc  -Wall -std=gnu99  -rdynamic CMakeFiles/energymon-cmd-profile.dir/energymon-cmd-profile.c.o CMakeFiles/energymon-cmd-profile.dir/__/common/energymon-time-util.c.o CMakeFiles/energymon-cmd-profile.dir/__/common/ptime/ptime.c.o  -o energymon-cmd-profile ../dummy/libenergymon-default.a 

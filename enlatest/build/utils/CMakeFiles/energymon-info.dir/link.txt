@@ -1,0 +1,1 @@
+/usr/bin/cc  -Wall -std=gnu99  -rdynamic CMakeFiles/energymon-info.dir/energymon-info.c.o  -o energymon-info ../dummy/libenergymon-default.a 

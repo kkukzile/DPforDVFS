@@ -1,0 +1,1 @@
+/usr/bin/cc  -Wall -std=gnu99  -rdynamic CMakeFiles/energymon-shmem-example.dir/example/energymon-shmem-example.c.o  -o energymon-shmem-example ../dummy/libenergymon-default.a 

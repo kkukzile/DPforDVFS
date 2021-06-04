@@ -1,0 +1,2 @@
+/usr/bin/ar qc libenergymon-odroid.a  CMakeFiles/energymon-odroid.dir/energymon-odroid.c.o CMakeFiles/energymon-odroid.dir/__/common/energymon-util.c.o CMakeFiles/energymon-odroid.dir/__/common/energymon-time-util.c.o CMakeFiles/energymon-odroid.dir/__/common/ptime/ptime.c.o
+/usr/bin/ranlib libenergymon-odroid.a

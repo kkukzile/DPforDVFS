@@ -1,0 +1,1 @@
+/usr/bin/cc  -Wall -std=gnu99  -rdynamic CMakeFiles/interval-test.dir/interval_test.c.o  -o interval-test ../dummy/libenergymon-default.a 

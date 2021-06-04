@@ -1,0 +1,32 @@
+os:
+  - linux
+  - osx
+
+language: c
+
+compiler:
+  - gcc
+  - clang
+
+addons:
+  apt:
+    packages:
+      - libusb-1.0-0-dev
+      - libftdi-dev
+      - libhidapi-dev
+  homebrew:
+    packages:
+      - libftdi
+      - hidapi
+    update: true
+
+script:
+  - mkdir _build
+  - cd _build
+    # Test build with stricter flags
+  - export CFLAGS="-D_FORTIFY_SOURCE=2 -fstack-protector -g3 -pedantic -W -Wall -Wbad-function-cast -Wcast-align
+      -Wcast-qual -Wdisabled-optimization -Wendif-labels -Wfloat-equal -Wformat=2 -Wformat-nonliteral -Winline
+      -Wmissing-declarations -Wmissing-prototypes -Wnested-externs -Wno-unused-parameter -Wpointer-arith -Wshadow
+      -Wstrict-prototypes -Wstack-protector -Wswitch -Wundef -Wwrite-strings"
+  - cmake .. -DCMAKE_C_FLAGS="$CFLAGS"
+  - cmake --build .

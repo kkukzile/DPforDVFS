@@ -1,0 +1,1 @@
+/usr/bin/cc  -Wall -std=gnu99  -rdynamic CMakeFiles/energymon-power-poller.dir/energymon-power-poller.c.o CMakeFiles/energymon-power-poller.dir/__/common/energymon-time-util.c.o CMakeFiles/energymon-power-poller.dir/__/common/ptime/ptime.c.o  -o energymon-power-poller ../dummy/libenergymon-default.a -lm 

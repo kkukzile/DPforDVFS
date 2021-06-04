@@ -1,0 +1,30 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+../inc/energymon-default.h
+energymon.h
+../inc/energymon.h
+
+../inc/energymon.h
+inttypes.h
+-
+stddef.h
+-
+
+/home/odroid/energymon/utils/energymon-info.c
+errno.h
+-
+inttypes.h
+-
+stdio.h
+-
+stdlib.h
+-
+energymon-default.h
+/home/odroid/energymon/utils/energymon-default.h
+

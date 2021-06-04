@@ -1,0 +1,1 @@
+/usr/bin/cc  -Wall -std=gnu99  -rdynamic CMakeFiles/energymon-od.dir/energymon-od.c.o CMakeFiles/energymon-od.dir/__/common/energymon-time-util.c.o CMakeFiles/energymon-od.dir/__/common/ptime/ptime.c.o  -o energymon-od ../dummy/libenergymon-default.a 
